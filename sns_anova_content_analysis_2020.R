@@ -320,6 +320,7 @@ output <- lm(Like_std ~ X1SNS*X7logo
              ,data = df_sns_aov)
 result <- aov(output)
 summary(result)
+
 TukeyHSD(result,"X1SNS:X7logo")
 
 #graph
